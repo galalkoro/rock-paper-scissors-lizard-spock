@@ -7,8 +7,8 @@
 - [ ] Team challenge : `solo`
 
 ## programming 
-- [ ] HTML
-- [ ] CSS, SCSS
+- [x] HTML
+- [x] CSS, SCSS
 - [ ] JavaScript
 
 ## Learning objectives
@@ -34,9 +34,9 @@
 - [ ] Rock crushes Scissors
 
 ## Must-have features
-- [ ] Have 5 buttons that the player can press to change their pick
-- [ ] Have another button to let the computer pick one and show the winner
-- [ ] Let the player know they won (no alert box)
+- [x] Have 5 buttons that the player can press to change their pick
+- [x] Have another button to let the computer pick one and show the winner
+- [x] Let the player know they won (no alert box)
 - [ ] Have a reset button
 
 ## Nice-to-have features

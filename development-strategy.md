@@ -19,7 +19,7 @@
 ## The Mission
 - [ ] Make a Rock paper scissors lizard Spock. Based on the original game "Rock Paper Scissors" gives you more outcomes and prevents having more than 50% chance of a tie.
 
-For the rules you can watch a [Youtube clip from the TV-show "The Big Bang Theory"](https://www.youtube.com/watch?v=Kov2G0GouBw).
+- [x] For the rules you can watch a [Youtube clip from the TV-show "The Big Bang Theory"](https://www.youtube.com/watch?v=Kov2G0GouBw).
 
 ### The rules
 - [ ] Scissors cut Paper

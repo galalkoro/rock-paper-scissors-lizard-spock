@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>rplsz</title>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#313131"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Rock-paper-scissors-lizard-spock</title>
+    <meta name="description" content="A simple rock, paper, scissors game with all basic features.">
+    <meta property="og:title" content="Rock-Paper-Scissors Game">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+     rel="stylesheet">
+<link rel="stylesheet" href="./styles/styles.css">
     
 </head>
 <body>
-    <header id="title">
-        <h1 class="title-header">Rock paper scissors lizard Spock</h1>
-    </header>
-    <div id="result">
 
+
+    <div class="main-header">
+        <div class="navbar">
+            <ul class="nav-ul">
+                <li class="first-li"> 
+                    <a href="#"><button class="social-btn nav-btn-color" title="partha's github profile">
+                        <i class="fab fa-github"></i>
+                    </button></li>
+                    <a href=""></a>
+                <li class="last-li">
+                    <p class="p-text p-color">Dark Mode</p>
+                    <button class="nav-btn-color dark-mode" title="change theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
+    <div class="container container-light">
+        <header>
+            <div class="title title-light">
+                <p>Rock</p>
+                <p>Paper</p>
+                <p>Scissors</p>
+                <p>Lizard</p>
+                <p>Spock</p>
+            </div>
+            <div class="score score-light">
+                <p>Computer: <span id="comp_score">0</span></p>
+                <p>User: <span id="user_score">0</span></p>
+            </div>
+        </header>
 
-    <div id="options">
-        <button type="button" class="btn btn-rock">Rock</button>
-        <button type="button" class="btn btn-paper">paper</button>
-        <button type="button" class="btn btn-scissors">Scissors</button>
-        <button type="button" class="btn btn-lizard">Lizard</button>
-        <button type="button" class="btn btn-spock">Spock</button>
-    </div>
+        <div class="main-part">
+            <button title="Rock" onclick="clicked('Rock')"><i class="far fa-hand-rock"></i></button>
+            <button title="Paper" onclick="clicked('Paper')"><i class="far fa-hand-paper"></i></button>
+            <button title="Scissors" onclick="clicked('Scissors')"><i class="far fa-hand-scissors"></i></button>
+            <button title="Lizard" onclick="clicked('Lizard')"><i class="far fa-hand-lizard"></i></button>
+            <button title="Spock" onclick="clicked('Spock')"><i class="far fa-hand-spock"></i></button>
+        </div>
 
-    <div class="com-cho">
-    <span>COMPUTER CHOICE</span>
-    <div id="computer-choice">
-        <img src="./images/robot.png" alt="robot images">
+        <button id="undo"><img src="./images/reset.jpg" alt=""></button>
+   
+        <div class="last-part">
+            <p class="choosing-part-comp p-light" id="compChoice"></p>
+            <p class="choosing-part-user p-light" id="userChoice"></p>
+            <p id="result"></p>
+        </div>
+
+        <!-- for rules -->
+
+       <!-- <div id="clickImage"><i class="fas fa-times"></i></div> -->
+        <!-- <button class="btn-grad" id="buttonClick">Rules</button> -->
+
+            
         
     </div>
-    <button id="play">play</button>
-    <button id="reset">Reset</button>
-    <div id="output"></div>
-    </div>
-
-    
-    
-
-
 
     <script src="./scripts/main.js"></script>
+   <script src="/scripts/mode.js"></script>
 </body>
 </html>
